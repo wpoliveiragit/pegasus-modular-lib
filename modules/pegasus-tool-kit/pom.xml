@@ -8,14 +8,24 @@
 		<groupId>br.com.pegasus.modules.lib</groupId>
 		<artifactId>pegasus-modular-lib</artifactId>
 		<version>1.0.0</version>
-		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>pegasus-tool-kit</artifactId>
 	<version>1.0.0</version>
-	
+	<groupId>br.com.pegasus.modules.lib</groupId>
+	<packaging>jar</packaging>
 
 	<dependencies>
-		<!-- Dependências específicas do módulo (se houver) -->
+		<!-- Dependências específicas do módulo -->
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/wpoliveiragit/maven-repository</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 </project>

@@ -23,8 +23,8 @@
 	</properties>
 
 	<modules>
-		<module>modules/smart-color-logger</module>
 		<module>modules/pegasus-tool-kit</module>
+		<module>modules/smart-color-logger</module>
 	</modules>
 
 	<dependencyManagement>

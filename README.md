@@ -1,3 +1,7 @@
+# Tarefas
+- remover a tag **<repositories>** de todos o modulos para reverificar se o projeto é redistribuido, mesmo sem elas.
+
+---
 # Modulos
 Este projeto foi criado no propósito de ter seus recursos construidos de maneira modulada.
 

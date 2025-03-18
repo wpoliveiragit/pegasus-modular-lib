@@ -13,7 +13,7 @@
 
 	<groupId>br.com.pegasus.modules.lib</groupId>
 	<artifactId>pegasus-modular-lib</artifactId>
-	<version>1.0.0</version>
+	<version>1.3.0</version>
 	<name>pegasus-modular-lib</name>
 	<packaging>pom</packaging>
 	<description>Projeto de bibliotecas de recursos modulares.</description>
@@ -25,6 +25,7 @@
 	<modules>
 		<module>modules/pegasus-tool-kit</module>
 		<module>modules/smart-color-logger</module>
+		<module>modules/fast-crypt</module>
 	</modules>
 
 	<dependencyManagement>

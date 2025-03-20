@@ -25,6 +25,7 @@
 	<modules>
 		<module>modules/pegasus-tool-kit</module>
 		<module>modules/smart-color-logger</module>
+		<module>modules/fast-crypt</module>
 	</modules>
 
 	<dependencyManagement>

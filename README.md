@@ -1,5 +1,5 @@
 # Tarefas
-- remover a tag **<repositories>** de todos o modulos para reverificar se o projeto é redistribuido, mesmo sem elas.
+- separar tutorial e colocar cada tutorial na pasta resources do raiz do projeto
 
 ---
 # Modulos

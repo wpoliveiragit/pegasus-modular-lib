@@ -1,8 +1,5 @@
 package br.com.pegasus.module.toolkit.method;
 
-import java.time.Instant;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -14,20 +11,22 @@ public final class CommonMethod {
 	private static long index = -1;// atributo de 'getNextIndex()'
 
 	/**
-	 * Retorna a classe corrente onde o objeto foi criado.
+	 * Retorna o próximo número do índice da biblioteca. O indice é iniciado em -1.
 	 * 
-	 * @return A classe corrente onde o objeto foi criado.
+	 * @return retorna o próximo número do índice da biblioteca.
 	 */
-	public static final Class<?> captureCreatorClass() {
-		StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-		if (stackTrace.length > NumberType.N_3) {
-			try {
-				return Class.forName(stackTrace[NumberType.N_3].getClassName());
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
-			}
-		}
-		return null;
+	public static long getNextIndex() {
+		return ++index;
+	}
+
+	/**
+	 * Converte Array de string em array de int.
+	 * 
+	 * @param values Array de string.
+	 * @return array de int.
+	 */
+	public static final int[] toArrayInt(String... values) {
+		return Stream.of(values).mapToInt(Integer::parseInt).toArray();
 	}
 
 	/**
@@ -45,22 +44,6 @@ public final class CommonMethod {
 		return Stream.of(clazz.getCanonicalName().split(StringType.SPLIT_PATH))
 				.map(name -> simpleName.equals(name) ? name : name.charAt(NumberType.N_0) + StringType.PIPE_PATH)//
 				.collect(Collectors.joining());//
-	}
-
-	/**
-	 * Retorna o próximo número do índice da biblioteca. O indice é iniciado em -1.
-	 * 
-	 * @return retorna o próximo número do índice da biblioteca.
-	 */
-	public static long getNextIndex() {
-		return ++index;
-	}
-
-	public static String timestampFormat(long timestamp) {
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern(StringType.DATE_PATTERN)
-				.withZone(ZoneId.systemDefault()); // Fuso horário padrão do sistema
-
-		return formatter.format(Instant.ofEpochMilli(timestamp));
 	}
 
 }

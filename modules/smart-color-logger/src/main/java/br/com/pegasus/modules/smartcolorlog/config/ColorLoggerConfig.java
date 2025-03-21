@@ -6,7 +6,7 @@ import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 import java.util.stream.Collectors;
 
-import br.com.pegasus.module.toolkit.method.CommonMethod;
+import br.com.pegasus.module.toolkit.method.DateMethod;
 import br.com.pegasus.module.toolkit.type.StringType;
 import br.com.pegasus.modules.smartcolorlog.pojo.FieldPojo;
 import br.com.pegasus.modules.smartcolorlog.type.ColorLogType;
@@ -113,7 +113,7 @@ public class ColorLoggerConfig extends Formatter {
 
 	@Override
 	public String format(LogRecord record) {
-		String date = CommonMethod.timestampFormat(record.getMillis());
+		String date = DateMethod.toStringDate(record.getMillis());
 
 		String elapsedTimeApp = (System.currentTimeMillis() - START_TIME_APP) + StringType.TXT_BLACK;
 

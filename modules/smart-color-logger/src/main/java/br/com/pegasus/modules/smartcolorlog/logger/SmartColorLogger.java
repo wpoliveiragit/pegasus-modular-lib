@@ -1,6 +1,7 @@
 package br.com.pegasus.modules.smartcolorlog.logger;
 
 import br.com.pegasus.module.toolkit.method.CommonMethod;
+import br.com.pegasus.module.toolkit.method.SystemMethod;
 import br.com.pegasus.module.toolkit.type.ObjectType;
 import br.com.pegasus.modules.smartcolorlog.method.ColorLoggerMethod;
 import br.com.pegasus.modules.smartcolorlog.pojo.SmartLogPojo;
@@ -13,7 +14,7 @@ public class SmartColorLogger {
 	private SmartLogPojo errorLog;
 
 	public SmartColorLogger() {
-		Class<?> clazz = CommonMethod.captureCreatorClass();
+		Class<?> clazz = SystemMethod.captureCreatorClass();
 		String currentClassLog = CommonMethod.abbreviatesCanonicalName(clazz);
 		String nameClass = clazz.getCanonicalName();
 
@@ -52,7 +53,5 @@ public class SmartColorLogger {
 	public void error(String message, Object... objects) {
 		ColorLoggerMethod.printLog(errorLog, message, objects);
 	}
-	
-	
 
 }

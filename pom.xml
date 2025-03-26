@@ -27,6 +27,7 @@
 		<module>modules/smart-color-logger</module>
 		<module>modules/fast-crypt</module>
 		<module>modules/smart-monitor</module>
+		<module>modules/smart-annotation</module>
 	</modules>
 
 	<dependencyManagement>

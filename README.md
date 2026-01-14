@@ -16,12 +16,12 @@ Foi criado o **create_new_module.bat** para autogerar um novo modulo. Abaixo est
 
 Crie a estrutura do pacote em **./modules/**:
 - ./modules/**nome-do-novo-modulo/pom.xml**
-- ./modules/**<nome-do-novo-modulo>/src/main/java/br.com.pegasus.module.<nome-do-modulo>**
-- ./modules/**<nome-do-novo-modulo>/src/main/java/resources/**
-- ./modules/**<nome-do-novo-modulo>/src/test/java/br.com.pegasus.module.<nome-do-modulo>**
-- ./modules/<**nome-do-novo-modulo>/src/test/java/resources/**
+- ./modules/**nome-do-novo-modulo/src/main/java/br.com.pegasus.module.<nome-do-modulo>**
+- ./modules/**nome-do-novo-modulo/src/main/java/resources/**
+- ./modules/**nome-do-novo-modulo/src/test/java/br.com.pegasus.module.<nome-do-modulo>**
+- ./modules/**nome-do-novo-modulo/src/test/java/resources/**
 
-Crie o pom.xml em **./modules/<nome-modulo>/** e adicione o conteudo abaixo (Obs.: altere a tag **<artifactId>** para o nome do novo modulo).
+Crie o pom.xml em **./modules/<nome-modulo/** e adicione o conteudo abaixo (Obs.: altere a tag **artifactId** para o nome do novo modulo).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

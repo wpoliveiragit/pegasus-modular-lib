@@ -36,7 +36,7 @@ public class OAuthWebSecCore {
     if (enableH2ConsoleProp) { // O H2 Console usa iframe internamente precisa desabilitar para funcionar
       http.headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin));
     }
-    MethodSecurityUtil.logInfo(log, enabledLog, " H2 Console Web: {}", enableH2ConsoleProp ? "habilitado" : "desabilitado");
+    MethodSecurityUtil.logInfo(log, enabledLog, " H2 Console Web: {}", enableH2ConsoleProp ? "enabled" : "disabled");
   }
 
   private void allowRoutes(HttpSecurity http, String[] openRoutes) throws Exception {

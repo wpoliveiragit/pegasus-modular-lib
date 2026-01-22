@@ -7,8 +7,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class RsaProps {
-  @NotBlank
-  private String publicKey;
-  @NotBlank
-  private String privateKey;
+  private @NotBlank String publicKey;
+  private @NotBlank String privateKey;
 }

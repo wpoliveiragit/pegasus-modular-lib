@@ -63,8 +63,4 @@ public final class MethodSecurityUtil {
     return pem.replaceAll("-----\\w+ (PUBLIC|PRIVATE) KEY-----", "").replaceAll("\\s", "");
   }
 
-  public static OAuth2Error createOAuth2Error() {
-    return new OAuth2Error("invalid_token", "Invalid Audience", null);
-  }
-
 }

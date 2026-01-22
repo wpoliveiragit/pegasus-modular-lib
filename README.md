@@ -83,11 +83,12 @@ Para publicar um novo pacote siga os passos abaixo
 1. execute o comando abaixo
 
 
+O comando deve ser executado no diretorio do pom.xml do modulo. O Deploy é aplicado apenas ao modulo
 ```shell
 mvn clean deploy
 ```
 
-caso de erro use dessa forma
+O comando deve ser executado no diretorio do pom.xml principal (na raiz do projeto). O Deploy é aplicado a todos aos modulos
 ```shell
 mvn clean deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/wpoliveiragit/maven-repository
 ```

@@ -12,7 +12,6 @@
 
 	<artifactId>smart-color-logger</artifactId>
 	<version>1.0.0</version>
-	<groupId>br.com.pegasus.modules.lib</groupId>
 	<packaging>jar</packaging>
 
 	<dependencies>
@@ -28,7 +27,6 @@
 		</dependency>
 	</dependencies>
 
-
 	<repositories>
 		<repository>
 			<id>github</id>
@@ -38,6 +36,5 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
 
 </project>

@@ -82,6 +82,12 @@ Para publicar um novo pacote siga os passos abaixo
 1. navegue até o raiz do projeto.
 1. execute o comando abaixo
 
-```java
+
+```shell
+mvn clean deploy
+```
+
+caso de erro use dessa forma
+```shell
 mvn clean deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/wpoliveiragit/maven-repository
 ```

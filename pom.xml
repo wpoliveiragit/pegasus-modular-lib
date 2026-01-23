@@ -24,6 +24,7 @@
     </properties>
 
     <modules>
+        <module>modules/pegasus-test-rest</module>
         <module>modules/pegasus-security</module>
         <module>modules/pegasus-tool-kit</module>
         <module>modules/smart-color-logger</module>
